@@ -1,0 +1,93 @@
+/* Basic Reset */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e2a3a, #26303c); /* Dark blue gradient */
+    color: #f0f0f0;
+}
+
+/* Game Container */
+body > div {
+    background: rgba(0, 0, 0, 0.8); /* Dark semi-transparent background */
+    border-radius: 12px;
+    padding: 30px 40px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    max-width: 450px;
+    width: 100%;
+}
+
+/* Title */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #3498db; /* Bright blue for emphasis */
+    font-weight: bold;
+}
+
+/* Message Display */
+#message {
+    margin: 15px 0 25px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #95a5a6; /* Light gray for subtlety */
+}
+
+/* Input Field */
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    background: #34495e; /* Dark blue-gray background */
+    color: #ecf0f1; /* Light text color */
+    text-align: center;
+}
+
+/* Focus effect on input */
+input[type="number"]:focus {
+    outline: none;
+    border-color: #1abc9c; /* Turquoise on focus */
+}
+
+/* Buttons */
+button {
+    margin: 15px 5px;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #fff;
+    background: #3498db; /* Blue button */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Button Hover Effects */
+button:hover {
+    background: #2980b9; /* Darker blue for hover */
+    transform: scale(1.05);
+}
+
+/* Disabled Button */
+button:disabled {
+    background: #7f8c8d;
+    color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+/* Attempts Display */
+#attempts {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #f39c12; /* Warm gold for attempts */
+}
