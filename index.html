@@ -3,18 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Guess the Number</title>
-    <link rel="stylesheet" href="style.css">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div>
-      <h1>Guess the Number Game</h1>
-      <p id="message">Guess the number between 1 and 100!</p>
-      <input type="number" id="guess" placeholder="Enter your guess" />
-      <button id="submit">Submit Guess</button>
-      <button id="restart">Restart Game</button>
-      <p id="attempts">Attempts: 0</p>
+    <div class="todo-container">
+      <div class="inptContainer">
+        <h1>To-Do List</h1>
+        <input  id="inpTxt" type="text" placeholder="enter your task" />
+        <button id="addTxt">Add</button>
+      </div>
+
+      <div>
+        <ul id="todo-list"></ul>
+      </div>
     </div>
-    <script src="app.js"> </script>
+    <script src="app.js"></script>
   </body>
 </html>
